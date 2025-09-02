@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Page Interface</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #333;
+      color: red1	;
+      padding: 1em;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      width: 200px;
+      padding: 1em;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    main {
+      flex: 1;
+      padding: 2em;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: blue;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>I AM HERE-SSK</h1>
+  </header>
+  <h2>MY BROTHERS ARE ANJI AND VINAY</h2>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Welcome!</h2>
+      <p>This is your main content area.</p>
+      <button onclick="showMessage()">Click Me</button>
+      <div id="output"></div>
+    </main>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('output').textContent = "FUCK YOU";
+    }
+  </script>
+</body>
+</html>
